@@ -151,21 +151,21 @@ h3 {
     padding: 60px 110px;
 }
 
-.services-grid .services-grid-item.services-grid-one {
+.services-grid .services-grid-item.services-grid-1 {
     grid-area: a;
 }
-.services-grid .services-grid-item.services-grid-two {
+.services-grid .services-grid-item.services-grid-2 {
     grid-area: b;
 }
-.services-grid .services-grid-item.services-grid-three {
+.services-grid .services-grid-item.services-grid-3 {
     grid-area: c;
 }
-.services-grid .services-grid-item.services-grid-four {
+.services-grid .services-grid-item.services-grid-4 {
     grid-area: d;
 }
-.services-grid .services-grid-item.services-grid-five {
+.services-grid .services-grid-item.services-grid-5 {
     grid-area: e;
 }
-.services-grid .services-grid-item.services-grid-six {
+.services-grid .services-grid-item.services-grid-6 {
     grid-area: f;
 }
