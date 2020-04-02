@@ -19,10 +19,11 @@ h1 {
     color: var(--color-white);
     font-size: 64px;
     text-transform: uppercase;
+    line-height: 1.5;
 }
 
 h1 + p {
-    margin: 0 auto;
+    margin: 22px auto 0;
     color: var(--color-white);
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
@@ -30,9 +31,11 @@ h1 + p {
 }
 
 h2 {
+    margin: 160px 0 55px;
     font-size: 36px;
     text-transform: uppercase;
     text-align: center;
+    letter-spacing: -0.02em;
 }
 
 h3 {
@@ -40,8 +43,7 @@ h3 {
 }
 
 .bg {
-    /* height: 100vh; */
-    padding: 300px 0;
+    padding: 190px 0 315px;
     background-image: url(../img/banner.png);
     background-repeat: no-repeat;
     background-position: center;
@@ -52,6 +54,10 @@ h3 {
 .wrapper {
     max-width: 1110px;
     margin: 0 auto;
+}
+
+.stats-wrapper {
+    background-color: var(--color-white);
 }
 
 .stats {
@@ -67,18 +73,20 @@ h3 {
 }
 
 .stats .stats-item h2 {
+    margin: 70px 0 20px;
     color: var(--color-accent);
     font-size: 72px;
 }
 
 .stats .stats-item h3 {
+    margin: 0;
     color: var(--color-black);
     font-size: 36px;
 }
 
 .stats .stats-item p {
+    margin: 10px 0 0;
     color: var(--color-gray);
-    
 }
 
 .parties {
@@ -88,16 +96,19 @@ h3 {
 
 .parties > div {
     max-width: 32%;
-    flex-basis: 32%;
+    flex-basis: 350px;
 }
 
 .parties img {
     width: 100%;
+    margin-bottom: 22px;
 }
 
 .parties h3 {
     position: relative;
-    padding-top: 20px;
+    padding-top: 30px;
+    text-transform: capitalize;
+    letter-spacing: 0.05em;
 }
 
 .parties h3::before {
@@ -111,10 +122,12 @@ h3 {
 }
 
 .promo {
+    margin-top: 80px;
     background-color: var(--color-accent);
 }
 
 .promo-wrapper {
+    padding: 40px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -124,15 +137,19 @@ h3 {
 }
 
 .promo-wrapper h3 {
+    margin: 0 0 20px;
     font-size: 48px;
+    letter-spacing: 0.03em;
 }
 
 .promo-wrapper p {
+    margin: 0;
     font-size: 24px;
+    letter-spacing: 0.05em;
 }
 
 .promo-wrapper button {
-    padding: 14px 30px;
+    padding: 15px 30px;
     background-color: var(--color-white);
     border: none;
     font-size: 14px;
@@ -145,13 +162,19 @@ h3 {
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 30px;
     text-align: center;
+    line-height: 1.5;
 }
 
 .services-grid .services-grid-item {
     padding: 60px 110px;
 }
 
+.services-grid .services-grid-item h3 {
+    margin: 5px 0 0;
+}
+
 .gallery-grid {
+    margin-top: 140px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 0;
