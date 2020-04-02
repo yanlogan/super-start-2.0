@@ -142,7 +142,7 @@ h3 {
 
 .services-grid {
     display: grid;
-    grid-template-areas: "a b c" "d e f";
+    grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 30px;
     text-align: center;
 }
@@ -151,21 +151,28 @@ h3 {
     padding: 60px 110px;
 }
 
-.services-grid .services-grid-item.services-grid-1 {
-    grid-area: a;
+.gallery-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 0;
 }
-.services-grid .services-grid-item.services-grid-2 {
-    grid-area: b;
+
+.gallery-grid .gallery-grid-item {
+    position: relative;
 }
-.services-grid .services-grid-item.services-grid-3 {
-    grid-area: c;
+
+.gallery-grid .gallery-grid-item::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(64, 65, 73, .5);
 }
-.services-grid .services-grid-item.services-grid-4 {
-    grid-area: d;
-}
-.services-grid .services-grid-item.services-grid-5 {
-    grid-area: e;
-}
-.services-grid .services-grid-item.services-grid-6 {
-    grid-area: f;
+
+.gallery-grid .gallery-grid-item img {
+    width: 100%;
+    height: 100%;
 }
