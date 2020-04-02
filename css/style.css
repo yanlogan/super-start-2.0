@@ -2,7 +2,6 @@
 
 :root {
     --color-white: #FFFFFF;
-    --color-white2: #F7F7F7;
     --color-black: #000000;
     --color-accent: #F7654A;
     --color-dark: #404149;
@@ -36,6 +35,10 @@ h2 {
     text-align: center;
 }
 
+h3 {
+    text-transform: uppercase;
+}
+
 .bg {
     /* height: 100vh; */
     padding: 300px 0;
@@ -49,10 +52,6 @@ h2 {
 .wrapper {
     max-width: 1110px;
     margin: 0 auto;
-}
-
-.wrapper-gray {
-    background-color: var(--color-white2);
 }
 
 .stats {
@@ -139,4 +138,34 @@ h2 {
     font-size: 14px;
     text-transform: uppercase;
     letter-spacing: 0.05em;
+}
+
+.grid {
+    display: grid;
+    grid-template-areas: "a b c" "d e f";
+    grid-gap: 30px;
+    text-align: center;
+}
+
+.grid .grid-item {
+    padding: 60px 110px;
+}
+
+.grid .grid-item.grid-one {
+    grid-area: a;
+}
+.grid .grid-item.grid-two {
+    grid-area: b;
+}
+.grid .grid-item.grid-three {
+    grid-area: c;
+}
+.grid .grid-item.grid-four {
+    grid-area: d;
+}
+.grid .grid-item.grid-five {
+    grid-area: e;
+}
+.grid .grid-item.grid-six {
+    grid-area: f;
 }
