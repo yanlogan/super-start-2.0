@@ -30,13 +30,19 @@ h1 + p {
     text-transform: uppercase;
 }
 
+h2 {
+    font-size: 36px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
 .bg {
     /* height: 100vh; */
+    padding: 300px 0;
     background-image: url(../img/banner.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    padding: 300px 0;
     text-align: center;
 }
 
@@ -74,4 +80,63 @@ h1 + p {
 .stats .stats-item p {
     color: var(--color-gray);
     
+}
+
+.parties {
+    display: flex;
+    justify-content: space-between;
+}
+
+.parties > div {
+    max-width: 32%;
+    flex-basis: 32%;
+}
+
+.parties img {
+    width: 100%;
+}
+
+.parties h3 {
+    position: relative;
+    padding-top: 20px;
+}
+
+.parties h3::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 55px;
+    height: 6px;
+    background-color: var(--color-accent);
+}
+
+.promo {
+    background-color: var(--color-accent);
+}
+
+.promo-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+    color: var(--color-white);
+    letter-spacing: 0.02em;
+}
+
+.promo-wrapper h3 {
+    font-size: 48px;
+}
+
+.promo-wrapper p {
+    font-size: 24px;
+}
+
+.promo-wrapper button {
+    padding: 14px 30px;
+    background-color: var(--color-white);
+    border: none;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
 }
