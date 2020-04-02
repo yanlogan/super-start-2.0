@@ -172,6 +172,10 @@ h3 {
     background-color: rgba(64, 65, 73, .5);
 }
 
+.gallery-grid .gallery-grid-item:hover::after {
+    background-color: rgba(64, 65, 73, 0);
+}
+
 .gallery-grid .gallery-grid-item img {
     width: 100%;
     height: 100%;
