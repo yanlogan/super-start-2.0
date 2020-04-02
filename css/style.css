@@ -140,32 +140,32 @@ h3 {
     letter-spacing: 0.05em;
 }
 
-.grid {
+.services-grid {
     display: grid;
     grid-template-areas: "a b c" "d e f";
     grid-gap: 30px;
     text-align: center;
 }
 
-.grid .grid-item {
+.services-grid .services-grid-item {
     padding: 60px 110px;
 }
 
-.grid .grid-item.grid-one {
+.services-grid .services-grid-item.services-grid-one {
     grid-area: a;
 }
-.grid .grid-item.grid-two {
+.services-grid .services-grid-item.services-grid-two {
     grid-area: b;
 }
-.grid .grid-item.grid-three {
+.services-grid .services-grid-item.services-grid-three {
     grid-area: c;
 }
-.grid .grid-item.grid-four {
+.services-grid .services-grid-item.services-grid-four {
     grid-area: d;
 }
-.grid .grid-item.grid-five {
+.services-grid .services-grid-item.services-grid-five {
     grid-area: e;
 }
-.grid .grid-item.grid-six {
+.services-grid .services-grid-item.services-grid-six {
     grid-area: f;
 }
