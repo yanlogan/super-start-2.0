@@ -242,3 +242,32 @@ h3 {
     line-height: 31px;
     letter-spacing: 0.02em;
 }
+
+.contacts {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.contacts > div {
+    flex-basis: 255px;
+    max-width: 24%;
+    text-align: center;
+    font-size: 24px;
+    line-height: 36px;
+    text-transform: uppercase;
+}
+
+.contacts h3 {
+    color: var(--color-gray);
+}
+
+.contacts > div ul {
+    padding: 0;
+    list-style: none;
+}
+
+.contacts > div a {
+    color: var(--color-accent);
+    text-decoration: none;
+}
