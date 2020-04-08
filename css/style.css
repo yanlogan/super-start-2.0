@@ -8,6 +8,10 @@
     --color-gray: #999999;
 }
 
+html, body {
+    height: 100%;
+}
+
 body {
     font-family: 'Oswald', sans-serif;
     font-size: 18px;
@@ -48,7 +52,9 @@ a {
 }
 
 .bg {
-    padding: 190px 0 315px;
+    position: relative;
+    z-index: -1;
+    height: 100vh;
     background-image: url(../img/banner.png);
     background-repeat: no-repeat;
     background-position: center;
@@ -59,6 +65,14 @@ a {
 .wrapper {
     max-width: 1110px;
     margin: 0 auto;
+    padding: 0 15px;
+}
+
+.bg .title {
+    position: absolute;
+    top: calc(50% - 116px - 75px);
+    left: 0;
+    right: 0;
 }
 
 .stats-wrapper {
@@ -216,7 +230,6 @@ a {
 }
 
 .feedback > div {
-    box-sizing: border-box;
     flex-basis: 350px;
     max-width: 32%;
 }
